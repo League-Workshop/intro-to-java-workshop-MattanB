@@ -77,14 +77,40 @@ public class QuizGame {
 			else {
 				JOptionPane.showMessageDialog(null, "Wrong answer.");
 			}
-			String q9 = JOptionPane.showInputDialog("Who made this quiz?");
-			if(q9.equalsIgnoreCase("Mattan")) {
+			String q9 = JOptionPane.showInputDialog("What is the chemical formula for Potassium Chloride?");
+			if(q9.equalsIgnoreCase("KCI")) {
+				
+				score ++;
+				JOptionPane.showMessageDialog(null, "That's Right!");
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "The right answer was KCI.");
+			}
+			String q10 = JOptionPane.showInputDialog("What is the estimated world population as of July 17, 2020?");
+			if(q10.equalsIgnoreCase("7.8 billion")) {
+				score ++;
+				JOptionPane.showMessageDialog(null, "you got it!");
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "Ahh. Sooo close! The answer was 7.8 billion");
+			}
+			String q11 = JOptionPane.showInputDialog("Where did camels originate?");
+			if(q11.equalsIgnoreCase("North America")) {
+				score ++;
+				JOptionPane.showMessageDialog(null, "Correct!");
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "As odd as it is, camels originated in North America over 45 \n" + "million years ago and migrated on the bering land bridge in an ice age to Eurasia. \n" + 
+						"They later migrated south to africa and the middle east");
+			}
+			String q12 = JOptionPane.showInputDialog("Who made this quiz?");
+			if(q12.equalsIgnoreCase("Mattan")) {
 				score ++;
 				JOptionPane.showMessageDialog(null, "Yessir!");
 			}
 			else {
 				JOptionPane.showMessageDialog(null, "Mattan made this quiz.");
 			}
-			JOptionPane.showMessageDialog(null, "You got " + score + "/8 questions correct! Thank you for playing!");
+			JOptionPane.showMessageDialog(null, "You got " + score + "/12 questions correct! Thank you for playing!");
 	}
 }
